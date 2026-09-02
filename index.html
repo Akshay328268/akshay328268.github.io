@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>AkshayTech - Mobile Application Studio</title>
+    <meta name="description" content="AkshayTech is a mobile software studio founded by Karri Sai Akshay Vardhan Reddy. Creators of CashForge Finance & Ledger Manager.">
+    <link rel="icon" type="image/jpeg" href="logo.jpg">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "background": "#050505",
+                      "on-background": "#f0f0f0",
+                      "surface": "#0a0a0a",
+                      "surface-container": "#0f0f12",
+                      "surface-container-high": "#16161c",
+                      "primary-container": "#0ea5e9",
+                      "primary": "#38bdf8",
+                      "on-surface": "#ffffff",
+                      "on-surface-variant": "#a1a1aa"
+              },
+              "fontFamily": {
+                      "headline-lg": ["Inter", "sans-serif"],
+                      "body-md": ["Inter", "sans-serif"],
+                      "headline-xl": ["Inter", "sans-serif"]
+              }
+            }
+          }
+        }
+    </script>
+    <style>
+        .glow-hover { transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease; }
+        .glow-hover:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(56, 189, 248, 0.15); border-color: rgba(56, 189, 248, 0.4); }
+        .glass-panel { background: rgba(15, 15, 18, 0.7); backdrop-filter: blur(16px); }
+        .supercell-badge { background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-primary selection:text-black">
+
+<!-- Supercell Header -->
+<header class="fixed top-0 w-full z-50 bg-background/90 backdrop-blur-md border-b border-white/10">
+    <div class="flex justify-between items-center h-20 px-6 max-w-[1400px] mx-auto">
+        <a class="flex items-center gap-3 group" href="index.html">
+            <img src="logo.jpg" alt="AkshayTech Logo" class="h-10 w-10 object-contain rounded-xl shadow-lg border border-white/10 group-hover:scale-105 transition-transform">
+            <div class="flex flex-col">
+                <span class="font-black text-xl text-white tracking-widest uppercase">AkshayTech</span>
+                <span class="text-[10px] text-primary tracking-widest uppercase font-semibold">Mobile Studio</span>
+            </div>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-8 font-bold text-xs uppercase tracking-widest">
+            <a class="text-primary border-b-2 border-primary py-1" href="index.html">Home</a>
+            <a class="text-zinc-400 hover:text-white transition-colors" href="apps.html">Our Apps</a>
+            <a class="text-zinc-400 hover:text-white transition-colors" href="about.html">The Studio</a>
+            <a class="text-zinc-400 hover:text-white transition-colors" href="contact.html">Support</a>
+        </nav>
+
+        <a class="hidden sm:inline-flex items-center justify-center bg-white text-black px-6 py-2.5 rounded-full font-black text-xs uppercase tracking-widest hover:bg-primary transition-colors shadow-lg" href="apps.html">
+            Explore Apps
+        </a>
+    </div>
+</header>
+
+<main class="pt-20">
+    <!-- Supercell Hero -->
+    <section class="relative min-h-[85vh] flex items-center justify-center overflow-hidden py-24 bg-gradient-to-b from-background via-surface-container to-background border-b border-white/10">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/10 via-transparent to-transparent pointer-events-none"></div>
+        
+        <div class="relative z-10 text-center px-6 max-w-[1200px] mx-auto">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 mb-8">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+                <span class="text-xs uppercase font-extrabold tracking-widest text-zinc-300">Verified Google Play Studio</span>
+            </div>
+
+            <h1 class="font-black text-4xl sm:text-6xl md:text-7xl text-white tracking-tight uppercase leading-none mb-6">
+                Building Mobile Ecosystems <br class="hidden sm:block"> 
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-sky-300 to-white">That Engage & Scale.</span>
+            </h1>
+
+            <p class="text-zinc-400 font-normal text-lg sm:text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
+                AkshayTech is an independent mobile application studio founded by <strong>Karri Sai Akshay Vardhan Reddy</strong>. Creators of CashForge Finance Manager.
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="apps.html" class="w-full sm:w-auto px-8 py-4 bg-primary text-black font-black text-sm uppercase tracking-widest rounded-full hover:bg-white transition-colors shadow-xl inline-flex items-center justify-center gap-2">
+                    Our Apps <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                </a>
+                <a href="about.html" class="w-full sm:w-auto px-8 py-4 bg-surface-container-high border border-white/15 text-white font-bold text-sm uppercase tracking-widest rounded-full hover:bg-white/10 transition-colors inline-flex items-center justify-center gap-2">
+                    About The Studio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CashForge App Showcase (Sole Official App) -->
+    <section class="py-24 px-6 max-w-[1400px] mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 border-b border-white/10 pb-6">
+            <div>
+                <span class="text-xs font-black uppercase tracking-widest text-primary mb-2 block">OFFICIAL APPLICATION</span>
+                <h2 class="font-black text-3xl sm:text-4xl text-white uppercase tracking-tight">CASHFORGE MANAGER</h2>
+            </div>
+            <a href="apps.html" class="text-xs font-bold uppercase tracking-widest text-primary hover:underline mt-4 md:mt-0 inline-flex items-center gap-1">
+                View App Details <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+            </a>
+        </div>
+
+        <div class="bg-surface-container rounded-3xl p-8 sm:p-12 border border-white/10 glow-hover relative overflow-hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-8">
+                    <div class="flex flex-wrap gap-3 mb-6">
+                        <span class="supercell-badge text-white px-3 py-1 rounded-md text-xs font-black tracking-widest uppercase">
+                            Android App
+                        </span>
+                        <span class="bg-black/60 text-zinc-300 border border-white/10 px-3 py-1 rounded-md text-xs font-semibold">
+                            Package: com.cashforge.ledger
+                        </span>
+                    </div>
+
+                    <h3 class="font-black text-2xl sm:text-4xl text-white mb-4 uppercase tracking-tight">Structured Finance & Installment Ledger</h3>
+                    
+                    <p class="text-zinc-400 font-normal leading-relaxed text-base mb-8">
+                        CashForge is a comprehensive mobile ledger application built for micro-finance businesses, collection managers, and field agents. Features daily, weekly (custom days), and monthly installment calculations, automated borrower serial numbers, multi-role hierarchy, and SQLCipher encrypted database security.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+                        <div class="p-4 bg-background rounded-2xl border border-white/5">
+                            <span class="material-symbols-outlined text-primary text-2xl mb-1">calendar_month</span>
+                            <h4 class="font-bold text-white text-sm">Flexible Schedules</h4>
+                            <p class="text-zinc-400 text-xs mt-1">Daily, weekly (mon-sun), & monthly due cycles.</p>
+                        </div>
+                        <div class="p-4 bg-background rounded-2xl border border-white/5">
+                            <span class="material-symbols-outlined text-primary text-2xl mb-1">badge</span>
+                            <h4 class="font-bold text-white text-sm">Multi-Role Security</h4>
+                            <p class="text-zinc-400 text-xs mt-1">Dedicated Owner, Manager, & Agent accounts.</p>
+                        </div>
+                        <div class="p-4 bg-background rounded-2xl border border-white/5">
+                            <span class="material-symbols-outlined text-primary text-2xl mb-1">lock</span>
+                            <h4 class="font-bold text-white text-sm">Encrypted Storage</h4>
+                            <p class="text-zinc-400 text-xs mt-1">SQLCipher local database protection.</p>
+                        </div>
+                    </div>
+
+                    <!-- Direct Legal & Support Links -->
+                    <div class="flex flex-wrap gap-4">
+                        <a href="https://sites.google.com/view/a-finance-app-privacy-policy/home" target="_blank" rel="noopener" class="px-6 py-3 bg-primary/20 text-primary border border-primary/30 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-primary/30 transition-colors inline-flex items-center gap-2">
+                            CashForge Privacy Policy <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+                        </a>
+                        <a href="https://sites.google.com/view/finance-app-terms-conditions/home" target="_blank" rel="noopener" class="px-6 py-3 bg-white/5 text-white border border-white/10 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-white/10 transition-colors inline-flex items-center gap-2">
+                            CashForge Terms <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+                        </a>
+                        <a href="contact.html?app=cashforge" class="px-6 py-3 bg-white/10 text-white border border-white/15 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-white/20 transition-colors inline-flex items-center gap-2">
+                            Get Support <span class="material-symbols-outlined text-[16px]">support_agent</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CashForge Logo -->
+                <div class="lg:col-span-4 flex justify-center">
+                    <div class="bg-surface-container-high p-8 rounded-3xl border border-white/10 text-center w-full max-w-sm shadow-2xl">
+                        <img src="cashforge-logo.png" alt="CashForge App Icon" class="w-28 h-28 mx-auto mb-6 rounded-3xl shadow-2xl border border-white/10 object-cover">
+                        <h4 class="font-black text-2xl text-white uppercase tracking-wider mb-1">CashForge</h4>
+                        <p class="text-xs text-zinc-400 mb-6">Finance & Ledger Manager</p>
+                        <span class="inline-flex items-center gap-1.5 px-4 py-2 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full text-xs font-bold">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Play Store Verified
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Studio Values -->
+    <section class="py-24 bg-surface border-t border-b border-white/10">
+        <div class="px-6 max-w-[1400px] mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-xs font-black uppercase tracking-widest text-primary mb-2 block">OUR PHILOSOPHY</span>
+                <h2 class="font-black text-3xl sm:text-4xl text-white uppercase tracking-tight">ENGINEERED FOR TRUST & PERFORMANCE</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 bg-surface-container rounded-3xl border border-white/10">
+                    <span class="material-symbols-outlined text-primary text-4xl mb-4">phonelink_setup</span>
+                    <h3 class="font-bold text-xl text-white uppercase mb-2">Native Android First</h3>
+                    <p class="text-zinc-400 text-sm font-normal leading-relaxed">Built with Kotlin, Jetpack Compose, and modern Android SDK standards for sub-second UI responsiveness and hardware optimization.</p>
+                </div>
+                <div class="p-8 bg-surface-container rounded-3xl border border-white/10">
+                    <span class="material-symbols-outlined text-primary text-4xl mb-4">security</span>
+                    <h3 class="font-bold text-xl text-white uppercase mb-2">Military-Grade Privacy</h3>
+                    <p class="text-zinc-400 text-sm font-normal leading-relaxed">Local database entries encrypted with SQLCipher and network traffic protected via TLS 1.3 transit security.</p>
+                </div>
+                <div class="p-8 bg-surface-container rounded-3xl border border-white/10">
+                    <span class="material-symbols-outlined text-primary text-4xl mb-4">verified</span>
+                    <h3 class="font-bold text-xl text-white uppercase mb-2">AdMob Verified</h3>
+                    <p class="text-zinc-400 text-sm font-normal leading-relaxed">Fully authorized publisher with active root app-ads.txt seller verification and Play Console compliance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Studio Footer -->
+<footer class="bg-black text-zinc-400 text-xs py-16 border-t border-white/10">
+    <div class="px-6 max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+        <div class="flex items-center gap-4">
+            <img src="logo.jpg" alt="AkshayTech Logo" class="h-10 w-10 object-contain rounded-xl border border-white/10">
+            <div class="flex flex-col">
+                <span class="font-black text-base text-white tracking-widest uppercase">AkshayTech</span>
+                <span class="text-[11px] text-zinc-400">KARRI SAI AKSHAY VARDHAN REDDY</span>
+            </div>
+        </div>
+
+        <div class="text-center md:text-left text-zinc-400">
+            © 2026 AkshayTech. All rights reserved. Registered Google Play Publisher.
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-6 font-bold uppercase tracking-widest text-[11px]">
+            <a class="hover:text-white transition-colors" href="index.html">Home</a>
+            <a class="hover:text-white transition-colors" href="apps.html">Our Apps</a>
+            <a class="hover:text-white transition-colors" href="about.html">The Studio</a>
+            <a class="hover:text-white transition-colors" href="contact.html">Support</a>
+            <a class="hover:text-white transition-colors text-primary" href="app-ads.txt" target="_blank">app-ads.txt</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

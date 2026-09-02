@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>The Studio - AkshayTech</title>
+    <meta name="description" content="Learn about Karri Sai Akshay Vardhan Reddy and AkshayTech software engineering practices, technical architecture, and publishing standards.">
+    <link rel="icon" type="image/jpeg" href="logo.jpg">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "background": "#050505",
+                      "on-background": "#f0f0f0",
+                      "surface": "#0a0a0a",
+                      "surface-container": "#0f0f12",
+                      "surface-container-high": "#16161c",
+                      "primary": "#38bdf8"
+              },
+              "fontFamily": {
+                      "headline-lg": ["Inter", "sans-serif"],
+                      "body-md": ["Inter", "sans-serif"]
+              }
+            }
+          }
+        }
+    </script>
+    <style>
+        .glow-hover { transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease; }
+        .glow-hover:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(56, 189, 248, 0.15); border-color: rgba(56, 189, 248, 0.4); }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-primary selection:text-black">
+
+<!-- Supercell Header -->
+<header class="fixed top-0 w-full z-50 bg-background/90 backdrop-blur-md border-b border-white/10">
+    <div class="flex justify-between items-center h-20 px-6 max-w-[1400px] mx-auto">
+        <a class="flex items-center gap-3 group" href="index.html">
+            <img src="logo.jpg" alt="AkshayTech Logo" class="h-10 w-10 object-contain rounded-xl shadow-lg border border-white/10 group-hover:scale-105 transition-transform">
+            <div class="flex flex-col">
+                <span class="font-black text-xl text-white tracking-widest uppercase">AkshayTech</span>
+                <span class="text-[10px] text-primary tracking-widest uppercase font-semibold">Mobile Studio</span>
+            </div>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-8 font-bold text-xs uppercase tracking-widest">
+            <a class="text-zinc-400 hover:text-white transition-colors" href="index.html">Home</a>
+            <a class="text-zinc-400 hover:text-white transition-colors" href="apps.html">Our Apps</a>
+            <a class="text-primary border-b-2 border-primary py-1" href="about.html">The Studio</a>
+            <a class="text-zinc-400 hover:text-white transition-colors" href="contact.html">Support</a>
+        </nav>
+
+        <a class="hidden sm:inline-flex items-center justify-center bg-white text-black px-6 py-2.5 rounded-full font-black text-xs uppercase tracking-widest hover:bg-primary transition-colors shadow-lg" href="contact.html">
+            Support Hub
+        </a>
+    </div>
+</header>
+
+<main class="pt-32 pb-24">
+    <div class="px-6 max-w-[1400px] mx-auto">
+        <div class="mb-16 border-b border-white/10 pb-8 text-center">
+            <span class="text-xs font-black uppercase tracking-widest text-primary mb-2 block">ABOUT AKSHAYTECH</span>
+            <h1 class="font-black text-4xl sm:text-5xl text-white uppercase tracking-tight mb-4">THE STUDIO STORY</h1>
+            <p class="text-zinc-400 font-normal text-lg max-w-2xl mx-auto">Engineered with precision for high-reliability mobile software ecosystems and secure business ledger operations.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-24">
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="p-10 bg-surface-container rounded-3xl border border-white/10 text-center w-full max-w-md shadow-2xl glow-hover">
+                    <img src="logo.jpg" alt="AkshayTech Logo" class="w-36 h-36 mx-auto mb-8 rounded-3xl shadow-2xl border border-white/10 object-cover">
+                    <h2 class="font-black text-3xl text-white uppercase tracking-wider mb-2">AkshayTech</h2>
+                    <p class="text-sm font-bold text-primary mb-6 uppercase tracking-wider">KARRI SAI AKSHAY VARDHAN REDDY</p>
+                    <p class="text-xs text-zinc-400 leading-relaxed font-normal">Independent Software Engineer & Google Play Publisher based in Anaparthi, Andhra Pradesh, India.</p>
+                </div>
+            </div>
+
+            <div class="lg:col-span-7 space-y-6">
+                <div class="bg-surface-container p-8 sm:p-10 rounded-3xl border border-white/10">
+                    <h3 class="font-black text-2xl sm:text-3xl text-white uppercase mb-4 tracking-tight">Our Mission & Engineering Values</h3>
+                    <p class="text-zinc-400 font-normal leading-relaxed text-base mb-6">AkshayTech focuses on building robust, offline-resilient Android applications tailored for real-world business operations. Our engineering methodology emphasizes local database encryption (SQLCipher), low latency cloud synchronization, multi-tier user security, and strict adherence to Google Play Store & Google AdMob compliance rules.</p>
+                    <p class="text-zinc-400 font-normal leading-relaxed text-base">Our flagship release, <strong>CashForge</strong>, serves business owners by structuring complex daily, weekly, and monthly loan collection schedules with precision mathematical accounting.</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="p-6 bg-surface-container-high rounded-2xl border border-white/5">
+                        <span class="text-xs text-zinc-500 font-bold uppercase tracking-widest block mb-1">Developer Account</span>
+                        <span class="font-bold text-white text-base">AkshayTech</span>
+                    </div>
+                    <div class="p-6 bg-surface-container-high rounded-2xl border border-white/5">
+                        <span class="text-xs text-zinc-500 font-bold uppercase tracking-widest block mb-1">Google Play ID</span>
+                        <span class="font-bold text-white text-base">7659339253659181395</span>
+                    </div>
+                    <div class="p-6 bg-surface-container-high rounded-2xl border border-white/5">
+                        <span class="text-xs text-zinc-500 font-bold uppercase tracking-widest block mb-1">AdMob Publisher ID</span>
+                        <span class="font-bold text-white text-base">pub-9737132917925761</span>
+                    </div>
+                    <div class="p-6 bg-surface-container-high rounded-2xl border border-white/5">
+                        <span class="text-xs text-zinc-500 font-bold uppercase tracking-widest block mb-1">Location</span>
+                        <span class="font-bold text-white text-base">Andhra Pradesh, India</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tech Stack -->
+        <div class="bg-surface-container rounded-3xl p-8 sm:p-12 border border-white/10">
+            <h2 class="font-black text-3xl text-white uppercase mb-8 text-center tracking-tight">Technical Stack</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 bg-surface rounded-2xl border border-white/5">
+                    <span class="material-symbols-outlined text-primary text-4xl mb-3">smartphone</span>
+                    <h3 class="font-bold text-lg text-white uppercase mb-2">Android Native Stack</h3>
+                    <p class="text-xs text-zinc-400 font-normal leading-relaxed">Kotlin, Jetpack Compose, Material 3, ViewModel & Coroutines, Android SDK 36.</p>
+                </div>
+                <div class="p-6 bg-surface rounded-2xl border border-white/5">
+                    <span class="material-symbols-outlined text-primary text-4xl mb-3">shield</span>
+                    <h3 class="font-bold text-lg text-white uppercase mb-2">Security & Storage</h3>
+                    <p class="text-xs text-zinc-400 font-normal leading-relaxed">SQLCipher encrypted database, Android Security Crypto Shared Preferences, Biometric Auth.</p>
+                </div>
+                <div class="p-6 bg-surface rounded-2xl border border-white/5">
+                    <span class="material-symbols-outlined text-primary text-4xl mb-3">dns</span>
+                    <h3 class="font-bold text-lg text-white uppercase mb-2">Backend & Monetization</h3>
+                    <p class="text-xs text-zinc-400 font-normal leading-relaxed">Spring Boot REST API, PostgreSQL database, Cloudflare Tunnels, Google AdMob SDK.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-black text-zinc-400 text-xs py-16 border-t border-white/10">
+    <div class="px-6 max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+        <div class="flex items-center gap-4">
+            <img src="logo.jpg" alt="AkshayTech Logo" class="h-10 w-10 object-contain rounded-xl border border-white/10">
+            <div class="flex flex-col">
+                <span class="font-black text-base text-white tracking-widest uppercase">AkshayTech</span>
+                <span class="text-[11px] text-zinc-400">KARRI SAI AKSHAY VARDHAN REDDY</span>
+            </div>
+        </div>
+
+        <div class="text-center md:text-left text-zinc-400">
+            © 2026 AkshayTech. All rights reserved. Registered Google Play Publisher.
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-6 font-bold uppercase tracking-widest text-[11px]">
+            <a class="hover:text-white transition-colors" href="index.html">Home</a>
+            <a class="hover:text-white transition-colors" href="apps.html">Our Apps</a>
+            <a class="hover:text-white transition-colors" href="about.html">The Studio</a>
+            <a class="hover:text-white transition-colors" href="contact.html">Support</a>
+            <a class="hover:text-white transition-colors font-semibold text-primary" href="app-ads.txt" target="_blank">app-ads.txt</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
